@@ -5,7 +5,6 @@ gunicorn
 requests
 scikit-image
 scikit-learn
-tensorflow
 scipy
 seaborn
 unicodecsv
