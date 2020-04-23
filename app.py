@@ -14,12 +14,13 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-import tensorflow
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.utils import to_categorical
-from tensorflow.keras import regularizers
-model= tensorflow.keras.models.load_model("model.h5")
+# import tensorflow
+# from tensorflow.keras.preprocessing.text import Tokenizer
+# from tensorflow.keras.preprocessing.sequence import pad_sequences
+# from tensorflow.keras.utils import to_categorical
+# from tensorflow.keras import regularizers
+# model= tensorflow.keras.models.load_model("model.h5")
+model=load_model("model.h5")
 def clean_tweet(tweet):
         '''
         Utility function to clean tweet text by removing links, special characters
