@@ -2,6 +2,7 @@
 import flask
 
 from flask import Flask, jsonify, abort, make_response, request, render_template
+from tensorflow.keras.models import load_model
 # import json
 import pickle
 # pip install h5py
