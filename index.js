@@ -15,7 +15,8 @@
  * =============================================================================
  */
 
-import * as toxicity from '@tensorflow-models/toxicity';
+// import * as toxicity from '@tensorflow-models/toxicity';
+model = await tf.loadModel('model.json')
 
 // const samples = [
 //   {
