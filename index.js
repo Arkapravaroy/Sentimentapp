@@ -14,7 +14,8 @@
  * limitations under the License.
  * =============================================================================
  */
-
+npm install @tensorflow-models/toxicity
+npm install @tensorflow/tfjs@1.0
 import * as toxicity from '@tensorflow-models/toxicity';
 // toxicity = await tf.loadModel('model.json')
 
