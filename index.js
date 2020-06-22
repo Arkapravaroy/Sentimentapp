@@ -17,7 +17,7 @@
 
 // import * as toxicity from '@tensorflow-models/toxicity';
  
-toxicity = await tf.loadModel('models/model.json')
+
 
 const samples = [
   {
@@ -70,7 +70,7 @@ const addPredictions = (predictions) => {
 };
 
 const predict = async () => {
-  model = await toxicity.load();
+  model = await await tf.loadModel('models/model.json');
   labels = model.model.outputNodes.map(d => d.split('/')[0]);
 
   const tableWrapper = document.querySelector('#table-wrapper');
