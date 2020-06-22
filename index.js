@@ -70,7 +70,7 @@ const addPredictions = (predictions) => {
 };
 
 const predict = async () => {
-  model = await await tf.loadModel('models/model.json');
+  model = await tf.loadModel('models/model.json');
   labels = model.model.outputNodes.map(d => d.split('/')[0]);
 
   const tableWrapper = document.querySelector('#table-wrapper');
