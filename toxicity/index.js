@@ -55,9 +55,9 @@ const addPredictions = (predictions) => {
     });
 };
 // tf.loadModel('model/model.json')
-// toxicity.load()
+// tf.loadLayersModel('model/model.json')
 const predict = async () => {
-    model = await tf.loadLayersModel('model/model.json');
+    model = await toxicity.load();
     console.log("done");
     document.getElementById("loader").style.display = "none";
 
