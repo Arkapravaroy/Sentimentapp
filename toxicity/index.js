@@ -1,4 +1,4 @@
-// import * as toxicity from '@tensorflow-models/toxicity';
+import * as tf from '@tensorflow/tfjs';
 
 // console.log('in here');
 
@@ -60,7 +60,7 @@ const addPredictions = (predictions) => {
 // tf.loadLayersModel('model/model.json')
 //toxicity.load()
 const predict = async () => {
-    model = await toxicity.load();
+    model = await tf.loadLayersModel('model/model.json');
     console.log("done");
     document.getElementById("loader").style.display = "none";
 
