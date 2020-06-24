@@ -2,23 +2,23 @@
 
 // console.log('in here');
 const samples = [];
-// const samples = [
-//     {
-//         'id': '002261b0415c4f9d',
-//         'text':
-//             'We\'re dudes on computers, moron.  You are quite astonishingly stupid.'
-//     },
-//     {
-//         'id': '0027160ca62626bc',
-//         'text':
-//             'Please stop. If you continue to vandalize Wikipedia, as you did to Kmart, you will be blocked from editing.'
-//     },
-//     {
-//         'id': '002fb627b19c4c0b',
-//         'text':
-//             'I respect your point of view, and when this discussion originated on 8th April I would have tended to agree with you.'
-//     }
-// ];
+const samples = [
+    {
+        'id': '002261b0415c4f9d',
+        'text':
+            'We\'re dudes on computers, moron.  You are quite astonishingly stupid.'
+    },
+    {
+        'id': '0027160ca62626bc',
+        'text':
+            'Please stop. If you continue to vandalize Wikipedia, as you did to Kmart, you will be blocked from editing.'
+    },
+    {
+        'id': '002fb627b19c4c0b',
+        'text':
+            'I respect your point of view, and when this discussion originated on 8th April I would have tended to agree with you.'
+    }
+];
 
 let model, labels;
 
@@ -58,7 +58,7 @@ const addPredictions = (predictions) => {
 // tf.loadLayersModel('model/model.json')
 //toxicity.load()
 const predict = async () => {
-    model = await tf.loadLayersModel('model/model.json');
+    model = await toxicity.load();
     console.log("done");
     document.getElementById("loader").style.display = "none";
 
