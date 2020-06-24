@@ -54,9 +54,9 @@ const addPredictions = (predictions) => {
         tableWrapper.insertAdjacentHTML('beforeEnd', predictionDom);
     });
 };
-
+//toxicity.load()
 const predict = async () => {
-    model = await toxicity.load();
+    model = await tf.loadLayersModel('model/model');
     console.log("done");
     document.getElementById("loader").style.display = "none";
 
