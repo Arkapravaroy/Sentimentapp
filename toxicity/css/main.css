@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     background-color:#ffffff;
-    color: black;
+    color: blue;
     line-height: 1.5;
 }
 h1 {
@@ -28,7 +28,7 @@ h1 {
 }
 
 .row:nth-of-type(2n) {
-    background: #efefef;
+    background: #efefff;
 }
 
 .row .text {
@@ -107,7 +107,7 @@ h1 {
     border-radius: 3px;
     letter-spacing: 1px;
     background: #0277bd;
-    color: white;
+    color: yellow;
 }
 
 #table-wrapper {
@@ -168,7 +168,7 @@ animation-delay: -0.15s;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(255,255,255); /* Black background with opacity */
+    background-color: rgba(250,250,250); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
     text-align: center;
